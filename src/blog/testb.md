@@ -14,8 +14,6 @@ imageAlt: Image caption1
 
 *V﻿oici* le blog, **amazing** right ?!
 
-
-
 # H﻿1 titre
 
 <!--StartFragment-->
@@ -28,13 +26,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu laoreet enim
 
 Nullam finibus quam vel cursus maximus. Suspendisse porttitor risus in massa pretium, non eleifend felis tempus. Donec tincidunt sodales mi id maximus. Quisque erat arcu, rhoncus ut leo nec, porttitor finibus augue. Nam nisi odio, lacinia ut pretium sit amet, bibendum id nibh. 
 
+```html
+<br>
+```
+
 Quisque eget arcu id lectus auctor lobortis. Vivamus ultrices lobortis ligula, nec rutrum turpis consectetur ut. Etiam molestie tincidunt velit vitae posuere. Aenean tortor turpis, sodales in 
-
-
-
-
-
-
 
 finibus sit amet, sagittis eu elit. In faucibus odio ac aliquam convallis. Pellentesque ac porttitor augue, in hendrerit enim. Duis malesuada ultricies felis at volutpat. Donec porta magna eu nunc consectetur pharetra.
 
