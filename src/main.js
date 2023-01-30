@@ -20,3 +20,4 @@ const html = marked(markdownContent);
 
 // Render the HTML on the front-end
 document.getElementByClassName("blog-article").innerHTML = html;
+
