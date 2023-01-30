@@ -13,10 +13,10 @@ marked.setOptions({
 });
 
 // Get the markdown content from Netlify CMS
-const markdownContent = "<YOUR MARKDOWN CONTENT HERE>";
+const markdownContent = markdownElement.textContent;
 
 // Parse the markdown content into HTML
 const html = marked(markdownContent);
 
 // Render the HTML on the front-end
-document.getElementById("content").innerHTML = html;
+document.getElementByClassName("blog-article").innerHTML = html;
