@@ -52,25 +52,11 @@ async function imageShortcode(src, alt, className, loading, sizes = '(max-width:
 
 
 
-
-
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-
-module.exports = function(eleventyConfig) {
-  eleventyConfig.setLibrary("md", markdownIt({
-    html: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
-  }));
-
-  eleventyConfig.addFilter("markdownify", function(value) {
-    return new markdownIt().render(value);
-  });
+  module.exports = function(eleventyConfig) {
+    eleventyConfig.addJavaScriptFunction('convertMarkdown', require('./markdown.js').convertMarkdown);
 };
+
+
 
 
 
@@ -98,7 +84,8 @@ module.exports = function (eleventyConfig) {
   
   
   
-  
+
+
   
   
   
