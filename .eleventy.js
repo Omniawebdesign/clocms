@@ -49,6 +49,37 @@ async function imageShortcode(src, alt, className, loading, sizes = '(max-width:
 }
 
 module.exports = function (eleventyConfig) {
+  
+  
+  
+  
+  
+  
+  
+  // support for markdown files
+eleventyConfig.setLibrary("md", require("markdown-it")({
+  html: true,
+  breaks: true,
+  linkify: true
+}));
+
+eleventyConfig.addFilter("markdownify", function(value) {
+  let md = require("markdown-it")({
+    html: true,
+    breaks: true,
+    linkify: true
+  });
+  return md.render(value);
+});
+
+  
+  
+  
+  
+  
+  
+  
+  
   // adds the navigation plugin for easy navs
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
