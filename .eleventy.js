@@ -52,42 +52,13 @@ async function imageShortcode(src, alt, className, loading, sizes = '(max-width:
 
 
 
-  module.exports = function(eleventyConfig) {
-    eleventyConfig.addJavaScriptFunction('convertMarkdown', require('./markdown.js').convertMarkdown);
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 module.exports = function (eleventyConfig) {
   
   
-  
-  
-  
-  
-  
-  
-  
-  
 
-
-  
-  
   
   
   // adds the navigation plugin for easy navs
