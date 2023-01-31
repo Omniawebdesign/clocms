@@ -54,11 +54,13 @@ eleventyComputed:
                     <span class="blog-date">{{ date | postDate }}</span>
                 </div>
             </div>
+            {% renderTemplate "md" %}
             <section id="blog-content">
                
-                {{ content | markdown }}
+                {{ content | content }}
              
             </section>
+            {% endrenderTemplate %}
         </article>
     </div>
     <!-- End .main-content -->
