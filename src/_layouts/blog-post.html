@@ -62,7 +62,12 @@ eleventyComputed:
             </section>
             
             
-           
+           <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var markdownContent = document.getElementById('blog-content').innerText;
+    document.getElementById('blog-content').innerHTML = marked(markdownContent);
+  });
+</script>
       
     
             
