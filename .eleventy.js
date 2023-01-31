@@ -56,22 +56,6 @@ module.exports = function (eleventyConfig) {
   
   
   
-  // support for markdown files
-eleventyConfig.setLibrary("md", require("markdown-it")({
-  html: true,
-  breaks: true,
-  linkify: true
-}));
-
-eleventyConfig.addFilter("markdownify", function(value) {
-  let md = require("markdown-it")({
-    html: true,
-    breaks: true,
-    linkify: true
-  });
-  return md.render(value);
-});
-
   
   
   
